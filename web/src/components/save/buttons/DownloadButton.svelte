@@ -96,7 +96,8 @@
             changeDownloadButton("check");
 
             const probeResult = await API.probeCobaltTunnel(response.url);
-
+console.log("probeResult: " , probeResult)
+console.log("response: " , response)
             if (probeResult === 200) {
                 changeDownloadButton("done");
 
